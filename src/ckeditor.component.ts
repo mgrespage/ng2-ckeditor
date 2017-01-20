@@ -144,6 +144,16 @@ export class CKEditorComponent {
     this.instance.on('focus', (evt) => {
       this.focus.emit(evt);
     });
+
+    // CKEditor fileUploadRequest event
+    this.instance.on('fileUploadRequest', (evt) => {
+      this.focus.emit(evt);
+    });
+
+    // CKEditor fileUploadResponse event
+    this.instance.on('fileUploadResponse', (evt) => {
+      this.focus.emit(evt);
+    });
   }
 
   /**
