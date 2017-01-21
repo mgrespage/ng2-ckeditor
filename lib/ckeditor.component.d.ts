@@ -11,6 +11,8 @@ export declare class CKEditorComponent {
     ready: EventEmitter<{}>;
     blur: EventEmitter<{}>;
     focus: EventEmitter<{}>;
+    fileUploadRequest: EventEmitter<{}>;
+    fileUploadResponse: EventEmitter<{}>;
     host: any;
     _value: string;
     instance: any;

@@ -29,6 +29,8 @@ export class Wrapper_CKEditorComponent {
   subscription1:any;
   subscription2:any;
   subscription3:any;
+  subscription4:any;
+  subscription5:any;
   constructor(p0:any) {
     this._changed = false;
     this.context = new import0.CKEditorComponent(p0);
@@ -44,6 +46,8 @@ export class Wrapper_CKEditorComponent {
     (this.subscription1 && this.subscription1.unsubscribe());
     (this.subscription2 && this.subscription2.unsubscribe());
     (this.subscription3 && this.subscription3.unsubscribe());
+    (this.subscription4 && this.subscription4.unsubscribe());
+    (this.subscription5 && this.subscription5.unsubscribe());
   }
   check_config(currValue:any,throwOnChange:boolean,forceUpdate:boolean):void {
     if ((forceUpdate || import3.checkBinding(throwOnChange,this._expr_0,currValue))) {
@@ -77,12 +81,14 @@ export class Wrapper_CKEditorComponent {
     var result:boolean = true;
     return result;
   }
-  subscribe(view:import2.AppView<any>,_eventHandler:any,emit0:boolean,emit1:boolean,emit2:boolean,emit3:boolean):void {
+  subscribe(view:import2.AppView<any>,_eventHandler:any,emit0:boolean,emit1:boolean,emit2:boolean,emit3:boolean,emit4:boolean,emit5:boolean):void {
     this._eventHandler = _eventHandler;
     if (emit0) { (this.subscription0 = this.context.change.subscribe(_eventHandler.bind(view,'change'))); }
     if (emit1) { (this.subscription1 = this.context.ready.subscribe(_eventHandler.bind(view,'ready'))); }
     if (emit2) { (this.subscription2 = this.context.blur.subscribe(_eventHandler.bind(view,'blur'))); }
     if (emit3) { (this.subscription3 = this.context.focus.subscribe(_eventHandler.bind(view,'focus'))); }
+    if (emit4) { (this.subscription4 = this.context.fileUploadRequest.subscribe(_eventHandler.bind(view,'fileUploadRequest'))); }
+    if (emit5) { (this.subscription5 = this.context.fileUploadResponse.subscribe(_eventHandler.bind(view,'fileUploadResponse'))); }
   }
 }
 var renderType_CKEditorComponent_Host:import4.RenderComponentType = import3.createRenderComponentType('',0,import5.ViewEncapsulation.None,([] as any[]),{});
