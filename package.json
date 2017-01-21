@@ -40,7 +40,7 @@
     "@angular/core": "^2.1.0",
     "@angular/forms": "^2.1.0",
     "rxjs": "^5.0.0-rc.1",
-    "zone.js": "^0.6.25"
+    "zone.js": "^0.6.25",
     "mango-ckeditor": "mgrespage/mango-ckeditor#node_module"
   }
 }
