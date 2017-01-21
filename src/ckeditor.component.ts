@@ -38,6 +38,8 @@ export class CKEditorComponent {
   @Output() ready = new EventEmitter();
   @Output() blur = new EventEmitter();
   @Output() focus = new EventEmitter();
+  @Output() fileUploadRequest = new EventEmitter();
+  @Output() fileUploadResponse = new EventEmitter();
   @ViewChild('host') host;
 
   _value = '';
@@ -147,12 +149,12 @@ export class CKEditorComponent {
 
     // CKEditor fileUploadRequest event
     this.instance.on('fileUploadRequest', (evt) => {
-      this.focus.emit(evt);
+      this.fileUploadRequest.emit(evt);
     });
 
     // CKEditor fileUploadResponse event
     this.instance.on('fileUploadResponse', (evt) => {
-      this.focus.emit(evt);
+      this.fileUploadResponse.emit(evt);
     });
   }
 
