@@ -29,9 +29,9 @@ export class Wrapper_CKEditorComponent {
   subscription1:any;
   subscription2:any;
   subscription3:any;
-  constructor(p0:any,p1:any) {
+  constructor(p0:any) {
     this._changed = false;
-    this.context = new import0.CKEditorComponent(p0,p1);
+    this.context = new import0.CKEditorComponent(p0);
     this._expr_0 = import1.UNINITIALIZED;
     this._expr_1 = import1.UNINITIALIZED;
     this._expr_2 = import1.UNINITIALIZED;
@@ -101,7 +101,7 @@ class View_CKEditorComponent_Host0 extends import2.AppView<any> {
   createInternal(rootSelector:string):import8.ComponentRef<any> {
     this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer,'ckeditor',import3.EMPTY_INLINE_ARRAY,rootSelector,(null as any));
     this.compView_0 = new View_CKEditorComponent0(this.viewUtils,this,0,this._el_0);
-    this._CKEditorComponent_0_3 = new Wrapper_CKEditorComponent(this.injectorGet(import9.NgZone,this.parentIndex),this.injectorGet(import0.CKEditor,this.parentIndex));
+    this._CKEditorComponent_0_3 = new Wrapper_CKEditorComponent(this.injectorGet(import9.NgZone,this.parentIndex));
     this.compView_0.create(this._CKEditorComponent_0_3.context);
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
     return new import8.ComponentRef_<any>(0,this,this._el_0,this._CKEditorComponent_0_3.context);

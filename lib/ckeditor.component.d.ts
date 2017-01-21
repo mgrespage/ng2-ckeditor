@@ -1,9 +1,4 @@
 import { EventEmitter, NgZone } from '@angular/core';
-export declare class CKEditor {
-    ckeditor: any;
-    constructor();
-    initialize(): any;
-}
 /**
  * CKEditor component
  * Usage :
@@ -21,11 +16,10 @@ export declare class CKEditorComponent {
     instance: any;
     debounceTimeout: any;
     zone: any;
-    editor: any;
     /**
      * Constructor
      */
-    constructor(zone: NgZone, ckeditor: CKEditor);
+    constructor(zone: NgZone);
     value: any;
     /**
      * On component destroy
