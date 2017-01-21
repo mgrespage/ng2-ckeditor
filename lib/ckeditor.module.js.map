@@ -1,0 +1,1 @@
+{"version":3,"file":"ckeditor.module.js","sourceRoot":"","sources":["../src/ckeditor.module.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAAyC;AAEzC,2DAAyD;AAEzD;;GAEG;AASH,IAAa,cAAc;IAA3B;IAA8B,CAAC;IAAD,qBAAC;AAAD,CAAC,AAA/B,IAA+B;AAAlB,cAAc;IAR1B,eAAQ,CAAC;QACR,YAAY,EAAE;YACZ,sCAAiB;SAClB;QACD,OAAO,EAAE;YACP,sCAAiB;SAClB;KACF,CAAC;GACW,cAAc,CAAI;AAAlB,wCAAc"}
