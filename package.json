@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "post-install": "npm run build && npm run build:aot",
+    "prepublish": "npm run build && npm run build:aot",
     "build": "node_modules/.bin/tsc",
     "build:aot": "node_modules/.bin/ngc -p tsconfig-aot.json"
   },
